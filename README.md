@@ -1,4 +1,4 @@
-### unique_files
+# unique_files
 
 I wrote this script for a company in order to go through a directory recursively and find all the unique file names which could be repeated throughout the different folders. There are some exceptions as the system used used some file names which should also be kept rather than overwriting newer versions of the file. I am proud of this work for the most part because I didn't know about os.path.walk at the time and I believe (to an extent) wrote my own version of it for our purposes. 
 
