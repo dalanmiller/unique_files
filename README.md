@@ -10,12 +10,12 @@ To ensure that there will be no overlap a new folder is created within the given
 
 ## The script makes use of the following modules:
 
-* time - for naming files and folders as well as making sure that the copied files will always be in a uniquely named folder (with the exception that the script is run within the same second which in our environment would be near-enough-unlikely to happen) 
-* sys - Solely for argv and being able to call the script from the command line and pass it paths to run rather than hard coding then running. It was my own attempt to enabling the functionality of other modules that offer much more robust command line argument functionality.
-* os - Needed the os module to navigate through directories ensure that certain paths were files or folders
-* re - This was the first script that I created using regular expressions and was quite happy with the results. Although I think my patterns could be optimized, it quickly accomplished what I needed to do.
-* pprint - for printing prettily to my custom log files. 
-* shutils - for using python's builtin libraries for copying files rather than using a system command through os.system or os.popopen. More portable this way. 
-* filecmp - for comparing the original files and destination directory, proved useful in showing errors that didn't appear elsewhere when doing the file compare process. 
+* *time* - for naming files and folders as well as making sure that the copied files will always be in a uniquely named folder (with the exception that the script is run within the same second which in our environment would be near-enough-unlikely to happen) 
+* *sys* - Solely for argv and being able to call the script from the command line and pass it paths to run rather than hard coding then running. It was my own attempt to enabling the functionality of other modules that offer much more robust command line argument functionality.
+* *os* - Needed the os module to navigate through directories ensure that certain paths were files or folders
+* *re* - This was the first script that I created using regular expressions and was quite happy with the results. Although I think my patterns could be optimized, it quickly accomplished what I needed to do.
+* *pprint* - for printing prettily to my custom log files. 
+* *shutils* - for using python's builtin libraries for copying files rather than using a system command through os.system or os.popopen. More portable this way. 
+* *filecmp* - for comparing the original files and destination directory, proved useful in showing errors that didn't appear elsewhere when doing the file compare process. 
 
 
