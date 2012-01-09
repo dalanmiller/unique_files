@@ -2,9 +2,7 @@
 
 I wrote this script for a company in order to go through a directory recursively and find all the unique file names which could be repeated throughout the different folders. There are some exceptions as the system used used some file names which should also be kept rather than overwriting newer versions of the file. I am proud of this work for the most part because I didn't know about os.path.walk at the time and I believe (to an extent) wrote my own version of it for our purposes. 
 
-In essence, the script consists of two parts, the first which scans through the origin folder for all the files and puts their names as the keys and paths as the values into a dictionary.
-
-This dictionary is then passed to the second part of the script which takes the dictionary and the destionation path and moves all the files one at a time to the destination. After all the files have been moved it ensures that the original files and the files at the destination directory are the same before ending. 
+In essence, the script consists of two parts, the first which scans through the origin folder for all the files and puts their names as the keys and paths as the values into a dictionary. This dictionary is then passed to the second part of the script which takes the dictionary and the destination path and moves all the files one at a time to the destination. After all the files have been moved it ensures that the original files and the files at the destination directory are the same before ending. 
 
 To ensure that there will be no overlap a new folder is created within the given destination directory with a name based on the current time the script is run. The idea being that the script could be automated and have a degree of assurance that it wouldn't step on its own toes. 
 
